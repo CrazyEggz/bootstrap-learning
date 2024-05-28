@@ -121,3 +121,21 @@ body {
     font-weight: bold;
     color: white;
 }
+
+.container-wrapper {
+    padding: 75px 25px;
+
+}
+
+.container-wrapper-red {
+    background-color: #ff5f00;
+    color: white;
+}
+
+hr {
+    margin: 0 0;
+}
+
+.table-container {
+    margin-top: 75px;
+}
