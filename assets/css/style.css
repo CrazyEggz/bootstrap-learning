@@ -11,7 +11,13 @@ body {
 }
 
 .callout-container {
-
+    height: 100vh;
+    background: url(../images/whiskey-background.jpg) no-repeat bottom right fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
 }
 
 .quotes-container {
@@ -23,27 +29,55 @@ body {
 }
 
 .table-container {
-    
+
+}
+
+.opaque-overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.jumbotron-header {
+    color: white;
+    font-weight: bold;
+    margin-bottom: 60px;
+}
+
+.jumbotron {
+    background-color: transparent;
+    color: white;
+}
+
+.jumbotron .lead {
+    color: lightgray;
+    margin: 25px 0;
+
 }
 
 
-
-
-
-
-
-
-
-
-.roboto-regular {
-    font-family: "Roboto", sans-serif;
-    font-weight: 400;
-    font-style: normal;
+.text-muted {
+    color: #d0d0d0!important;
+    font-style: italic;
+    font-size: 90%;
+    margin: 20px 0;
 }
 
+.btn--cta {
+    background-color: #ff5f00;
+    border-color: #ff5f00;
+    border-radius: 50px;
+    width: 160px;
+    color: white;
+    font-weight: bold;
+}
 
-.roboto-bold {
-    font-family: "Roboto", sans-serif;
-    font-weight: 700;
-    font-style: normal;
+.btn--cta:hover {
+    background-color: #d95103;
+    border-color: #d95103;
+    font-weight: bold;
+    color: white;
 }
