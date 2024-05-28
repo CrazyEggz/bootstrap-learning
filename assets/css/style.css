@@ -32,6 +32,46 @@ body {
 
 }
 
+.navalert-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding-left: 0;
+    padding-right: 0;
+    z-index: 1;
+}
+
+
+.alert-container .col-12 {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.site-wide-alert {
+    border-radius: 0;
+    background-color: rgb(255, 179, 0);
+    border-color: rgb(255, 179, 0);
+}
+
+.navbar {
+    margin-bottom: 0;
+    border: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.25);
+}
+
+.navbar .navbar-toggler {
+    border: 0;
+}
+
+.navbar-brand {
+    font-weight: bold;
+}
+
+.navbar a {
+    font-weight: bold;
+}
+
 .opaque-overlay {
     background-color: rgba(0, 0, 0, 0.5);
     position: absolute;
