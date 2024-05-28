@@ -8,6 +8,10 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
         integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/6e7a88330f.js" crossorigin="anonymous"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,400;1,500;1,700;1,900&display=swap');
+    </style>
+    <link rel="stylesheet" href="assets/css/style.css" type="text/css">
 </head>
 
 <body>
@@ -40,16 +44,16 @@
             <a href="/login">Sign In / Sign Up</a>
         </div>
     </nav>
-    <article class="container mt-3">
-        <div class="row">
+    <!-- <div class="row">
             <div class="col-12">
                 <div class="alert alert-warning d-none d-sm-block">
                     <strong>Sale is Now On!</strong> We've got a sale on. Get a 12 month subscription for the price of
                     6! <a href="">See here for details!</a>
                 </div>
             </div>
-        </div>
-        <!-- Callout -->
+        </div> -->
+    <!-- Callout -->
+    <div class="container callout-container">
         <div class="row">
             <div class="col-12">
                 <section class="callout jumbotron text-center">
@@ -65,10 +69,12 @@
                 </section>
             </div>
         </div>
-        <!-- /.callout -->
-        <hr>
+    </div>
+    <!-- /.callout -->
+    <hr>
 
-        <!-- Quotes -->
+    <!-- Quotes -->
+    <div class="container quotes-container">
         <section class="quotes">
             <div class="row">
                 <div class="col-12 my-3">
@@ -115,11 +121,13 @@
                 </div>
             </div>
         </section>
+    </div>
 
-        <!-- /.quotes -->
-        <hr>
+    <!-- /.quotes -->
+    <hr>
 
-        <!-- Features -->
+    <!-- Features -->
+    <div class="container features-container">
         <section class="features">
             <div class="row">
                 <div class="col-12 my-3">
@@ -163,50 +171,51 @@
                 </div>
             </div>
         </section>
-        <!-- /.features -->
-        <hr>
+    </div>
+    <!-- /.features -->
+    <hr>
 
-        <!-- Table -->
-        <section>
-            <h2 class="text-uppercase">Monthly favorites</h2>
-            <table class="table table-bordered">
-                <thead>
-                    <tr>
-                        <th scope="col"></th>
-                        <th scope="col">Name</th>
-                        <th scope="col">Origin</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <th scope="row">1</th>
-                        <td>Springbank</td>
-                        <td>Campbeltown</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">2</th>
-                        <td>Aberfeldy</td>
-                        <td>Highlands</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">3</th>
-                        <td>Kilchoman</td>
-                        <td>Islay</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">4</th>
-                        <td>Holyrood</td>
-                        <td>Lowlands</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">5</th>
-                        <td>Tormore</td>
-                        <td>Speyside</td>
-                    </tr>
-                </tbody>
-            </table>
-        </section>
-    </article>
+    <!-- Table -->
+    <div class="container table-container">
+        <h2 class="text-uppercase">Monthly favorites</h2>
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th scope="col"></th>
+                    <th scope="col">Name</th>
+                    <th scope="col">Origin</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">1</th>
+                    <td>Springbank</td>
+                    <td>Campbeltown</td>
+                </tr>
+                <tr>
+                    <th scope="row">2</th>
+                    <td>Aberfeldy</td>
+                    <td>Highlands</td>
+                </tr>
+                <tr>
+                    <th scope="row">3</th>
+                    <td>Kilchoman</td>
+                    <td>Islay</td>
+                </tr>
+                <tr>
+                    <th scope="row">4</th>
+                    <td>Holyrood</td>
+                    <td>Lowlands</td>
+                </tr>
+                <tr>
+                    <th scope="row">5</th>
+                    <td>Tormore</td>
+                    <td>Speyside</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
 
     <!-- Modal -->
     <div class="modal fade" id="SignUpModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -233,7 +242,8 @@
                         </div>
                         <div class="form-group">
                             <label for="repeatPassword">Repeat Password</label>
-                            <input type="password" class="form-control" id="repeatPassword" placeholder="Repeat Password">
+                            <input type="password" class="form-control" id="repeatPassword"
+                                placeholder="Repeat Password">
                         </div>
                         <button type="submit" class="btn btn-success">Submit</button>
                     </form>
